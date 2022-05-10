@@ -13,6 +13,7 @@ struct test3App: App {
         WindowGroup {
             NavigationView{
                 ContentView()
+//                LoginView()
             }
             
         }
