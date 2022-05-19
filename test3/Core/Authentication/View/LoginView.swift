@@ -17,14 +17,7 @@ struct LoginView: View {
             VStack(alignment: .leading){
                 HStack{ Spacer() }
                 
-                
-                Text("hello")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-                
-                Text("Welcome back")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
+                AuthHeaderView(title1: "Hello", title2: "Welcome back")
             }
             .frame(height: 260)
             .padding(.leading)
@@ -33,8 +26,9 @@ struct LoginView: View {
             .clipShape(RoundedShape(corners: [.bottomRight]))
             
             VStack(spacing: 40){
-                TextField("Email", text: $email)
-                TextField("Password", text: $password)
+                CustomTextField(imageName: "envelope", placeholderText: "Email", text:  $email)
+                
+                CustomTextField(imageName: "lock", placeholderText: "Password", text: $password)
             }
             .padding(.horizontal, 32)
             .padding(.top, 44)
