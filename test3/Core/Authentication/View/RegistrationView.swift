@@ -13,6 +13,7 @@ struct RegistrationView: View {
     @State private var fullName = ""
     @State private var password = ""
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var viewModel: AuthViewModel
 
     var body: some View {
         VStack{
@@ -32,7 +33,8 @@ struct RegistrationView: View {
             
             Button{
                 print("sign up here..")
-                presentationMode.wrappedValue.dismiss()
+                viewModel.register(withEmail: email, password: password, fullname: fullName, username: userName)
+//                presentationMode.wrappedValue.dismiss()
             } label: {
                 Text("Sign Up")
                     .font(.headline)

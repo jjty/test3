@@ -39,6 +39,7 @@
 		C9E95BF72834D323002892CA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C9E95BF62834D323002892CA /* FirebaseFirestore */; };
 		C9E95BF92834D323002892CA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C9E95BF82834D323002892CA /* FirebaseFirestoreSwift */; };
 		C9E95BFB2834D323002892CA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C9E95BFA2834D323002892CA /* FirebaseStorage */; };
+		C9E95BFD28364E95002892CA /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E95BFC28364E95002892CA /* AuthViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		C9E95BEA2834B0AC002892CA /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C9E95BEF2834B6AB002892CA /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		C9E95BF12834C900002892CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C9E95BFC28364E95002892CA /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -409,6 +411,7 @@
 		C9E95BAA2829EDF4002892CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C9E95BFC28364E95002892CA /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 				C9E95BAF2829EE13002892CA /* RegistrationView.swift in Sources */,
 				C9E95BEB2834B0AC002892CA /* CustomTextField.swift in Sources */,
 				C9E95BA628290522002892CA /* NewTweetView.swift in Sources */,
+				C9E95BFD28364E95002892CA /* AuthViewModel.swift in Sources */,
 				C9E95BB12829EF1D002892CA /* RoundedShape.swift in Sources */,
 				C9176B202828ED9F005F45F8 /* SideMenuOptionRowView.swift in Sources */,
 				C9176B132828D95D005F45F8 /* UserRowView.swift in Sources */,
